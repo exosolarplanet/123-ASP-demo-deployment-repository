@@ -1,6 +1,19 @@
 name: Deploy Application
 on: 
   workflow_dispatch:
+    inputs:
+      image-name:
+        description: 'image name'
+        type: string
+        required: true
+      image-version:
+        description: 'image version'
+        type: string
+        required: true
+      artifactory-path:
+        description: 'artifactory path'
+        type: string
+        required: true
 
 jobs:
   deploy:

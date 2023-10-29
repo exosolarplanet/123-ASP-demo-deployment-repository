@@ -29,3 +29,11 @@ jobs:
         with:
           distribution: 'zulu' 
           java-version: '17'
+
+      - uses: exosolarplanet/release-bot@main
+        env:
+          token: ${{ secrets.TOKEN }}
+        with:
+          image_name: ${{ inputs.image_name }}
+          image_version: ${{ inputs.image_version }}
+          artifactory_path: ${{ inputs.artifactory_path }}

@@ -3,6 +3,6 @@ name: test-environment
 type: application
 version: 0.1.19
 dependencies:
-  - name: 'sample-app'
+  - name: 'my-image'
     version: 1.3.16
     repository: sample-repo
